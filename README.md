@@ -1,24 +1,17 @@
-# Foobar
+# Teremim
 
-Foobar is a Python library for dealing with word pluralization.
+Um teremin simples usando uma placa de desenvolvimento `Arduino`, um sensor de distância `HC-SR04` e um `Buzzer`.
 
-## Installation
+## Montagem
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
+Tenha atenção aos pinos, como mostra o código, ECHO = 6, TRIGGER = 7 e BUZZER = 2
+```c++
+const int echoPin = 6; 
+const int trigPin = 7;
+const int buzzer = 2;
 ```
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+## Código
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
